@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-1: #e7e2de;
+  --color-2: #b9a79b;
+  --color-3: #b64419;
+  --color-4: #72787c;
+  --color-5: #494446;
+  --color-6: #191212;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: var(--color-1);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+form {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#myInput {
+  border: solid 3px rgb(182, 68, 25);
+  background: rgba(182, 68, 25, 0.15);
+  border-radius: 0.5rem;
+  width: 300px;
+  height: 40px;
+}
+
+#list-container {
+  width: 285px;
+  height: 300px;
+  right: 50px;
+  top: 52%;
+  left: 39%;
+}
+
+#dropdown {
+  padding: 3px 5px;
+  list-style: none;
+  background-color: #72787c;
+  color: var(--color-1);
+
+  z-index: 99;
+}
